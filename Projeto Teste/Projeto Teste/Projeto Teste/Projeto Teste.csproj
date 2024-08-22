@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C17524FD-A588-4C96-9B46-9422E2F4AA03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projeto_Teste</RootNamespace>
+    <AssemblyName>Projeto Teste</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Contratacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Contratacao.Designer.cs">
+      <DependentUpon>Form_Contratacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Crediario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Crediario.Designer.cs">
+      <DependentUpon>Form_Crediario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Principal.Designer.cs">
+      <DependentUpon>Form_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Eleicoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Eleicoes.Designer.cs">
+      <DependentUpon>Form_Eleicoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Futebol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Futebol.Designer.cs">
+      <DependentUpon>Form_Futebol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Meses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Meses.Designer.cs">
+      <DependentUpon>Form_Meses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Contratacao.resx">
+      <DependentUpon>Form_Contratacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Crediario.resx">
+      <DependentUpon>Form_Crediario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Eleicoes.resx">
+      <DependentUpon>Form_Eleicoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Futebol.resx">
+      <DependentUpon>Form_Futebol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Meses.resx">
+      <DependentUpon>Form_Meses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Principal.resx">
+      <DependentUpon>Form_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar_Botao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-voltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao_Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook-empty-design-paper-419635.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-13088177.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-ball-stadion-football-the-pitch-47730.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-8846632.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-88466321.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-7352058.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-73520581.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-88466322.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-7339327.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-73393271.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-73520582.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-73393272.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34679366495_6dcf8ce33a_b.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
